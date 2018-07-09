@@ -1,0 +1,72 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  /* HEADER */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 5px;
+  }
+  /* SECTION ABOUT */
+  .about-container .about-border {
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* HEADER */
+  header {
+    height: 115vh;
+  }
+  .napis {
+    left: 100px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 5px;
+  }
+  .header-text {
+    padding-top: 200px;
+  }
+  /* SECTION-SERVICES */
+  .services {
+    padding-bottom: 80px;
+  }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+  }
+  /* SEKCJA ABOUT US */
+  .about-container {
+    margin: 100px 100px 100px 100px;
+    margin-top: 100px;
+  }
+  .about-container .row {
+    height: auto;
+  }
+  .about-container .row .colimg {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* SEKCJA AMAZING */
+  .amazing-endtext {
+    margin: 50px 50px 50px 50px;
+  }
+  /* STOPKA */
+  .footer {
+    margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer .copyrights {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
