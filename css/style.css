@@ -290,69 +290,69 @@ header {
   height: 105vh;
   background-image: url("../images/baner_header_1.jpg");
   position: relative;
+  background-size: cover;
+  max-width: 100%;
 }
 
-.napis {
-  top: 37px;
-  left: 227px;
-  position: absolute;
-}
-
-nav {
-  position: absolute;
-  left: 40vw;
-  padding-top: 15px;
-}
-
-nav ul {
+header .napis {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+header nav {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
   list-style-type: none;
 }
 
-nav ul li {
-  padding: 25px;
+header nav ul li {
+  padding: 25px 2vw 25px 2vw;
 }
 
-nav ul li a {
+header nav ul li a {
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: #ffea31;
 }
 
-.header-text {
+header .header-text {
+  padding-top: 170px;
   text-align: center;
-  padding-top: 260px;
 }
 
-.header-text .napis-gora {
+header .header-text .napis-gora {
   font-size: 40px;
   font-style: italic;
   color: #FFF;
   font-family: 'Vesper Libre', serif;
 }
 
-.header-text .napis-gora p {
+header .header-text .napis-gora p {
   margin: 0;
 }
 
-.header-text .napis-dol {
+header .header-text .napis-dol {
   font-size: 70px;
   color: #FFF;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-.header-text .napis-dol p {
+header .header-text .napis-dol p {
   margin-top: 10px;
   margin-bottom: 70px;
 }
 
-.header-text .napis-button .button {
+header .header-text .napis-button .button {
   text-decoration: none;
   padding: 20px 50px 20px 50px;
   background-color: #ffea31;
@@ -364,9 +364,48 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.header-text .napis-button .button:hover {
-  background-color: red;
-  color: #ffea31;
+header .header-text .napis-button .button:hover {
+  background-color: #969696;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav {
+    padding-top: 10px;
+  }
+  header nav ul {
+    padding: 0;
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 5px;
+  }
+  header .header-text {
+    text-align: center;
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  header nav {
+    padding-top: 10px;
+  }
+  header nav ul {
+    padding: 0;
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 5px;
+  }
+  header .header-text {
+    text-align: center;
+    padding-top: 90px;
+  }
+  header .header-text .napis-gora {
+    font-size: 20px;
+  }
+  header .header-text .napis-dol {
+    font-size: 50px;
+  }
 }
 
 /* SECTION-SERVICES */
@@ -415,6 +454,18 @@ nav ul li a:hover {
 .services .services-container .commerce p {
   color: #969696;
   font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  /* SECTION-SERVICES */
+  .services {
+    padding-bottom: 80px;
+  }
+  .services .services-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+  }
 }
 
 /* PORTFOLIO */
@@ -540,6 +591,30 @@ nav ul li a:hover {
   width: 0%;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-container .about-border {
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .about-container {
+    margin: 100px 20px 100px 20px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .about .about-container .row {
+    height: auto;
+  }
+  .about .about-container .row .colleft {
+    text-align: center;
+  }
+  .about .about-container .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 /* SEKCJA AMAZING TEAM */
 .amazing {
   background-color: #f8f8f8;
@@ -663,7 +738,17 @@ nav ul li a:hover {
 }
 
 .amazing .amazing-baner img {
-  padding: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .amazing .amazing-container .member {
+    text-align: center;
+    padding: 15px;
+  }
+  .amazing .amazing-endtext {
+    margin: 50px 50px 50px 50px;
+  }
 }
 
 /* SECTION CONTACT */
@@ -672,6 +757,7 @@ nav ul li a:hover {
   padding-top: 100px;
   background-image: url("../images/contact_us_tlo.jpg");
   position: relative;
+  background-size: cover;
 }
 
 .contact .contact-header p {
@@ -736,8 +822,22 @@ nav ul li a:hover {
 }
 
 .contact .contact-button .button:hover {
-  background-color: red;
-  color: #ffea31;
+  background-color: #969696;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-container input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .contact .contact-container .right textarea {
+    width: 100%;
+  }
 }
 
 /* STOPKA */
@@ -813,68 +913,9 @@ nav ul li a:hover {
   fill: #FFF;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  /* HEADER */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul li {
-    padding: 5px;
-  }
-  /* SECTION ABOUT */
-  .about-container .about-border {
-    border: none;
-  }
-}
-
 @media (max-width: 767px) {
-  /* HEADER */
-  header {
-    height: 125vh;
-  }
-  .napis {
-    left: 100px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul li {
-    padding: 5px;
-  }
-  .header-text {
-    padding-top: 200px;
-  }
-  /* SECTION-SERVICES */
-  .services {
-    padding-bottom: 80px;
-  }
-  .services .services-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px 20px 20px;
-  }
-  /* SEKCJA ABOUT US */
-  .about .about-container {
-    margin: 100px 20px 100px 20px;
-    margin-top: 100px;
-  }
-  .about .about-container .row {
-    height: auto;
-  }
-  .about .about-container .row .colimg {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  /* SEKCJA AMAZING */
-  .amazing .amazing-endtext {
-    margin: 50px 50px 50px 50px;
-  }
-  /* STOPKA */
   .footer {
-    margin: 20px 100px 20px 100px;
+    margin: 20px 50px 20px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
