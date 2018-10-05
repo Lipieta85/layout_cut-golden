@@ -1,1 +1,1 @@
- https://lipieta85.github.io/zad.7.7/
+ https://lipieta85.github.io/layout_cut-golden/
